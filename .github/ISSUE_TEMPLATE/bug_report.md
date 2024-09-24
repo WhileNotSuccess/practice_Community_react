@@ -2,7 +2,7 @@
 name: Bug report
 about: 찾은 버그를 알려주세요
 title: "[BUG]"
-labels: bug, enhancement
+labels: bug
 assignees: ''
 
 ---
