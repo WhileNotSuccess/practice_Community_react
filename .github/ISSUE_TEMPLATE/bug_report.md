@@ -1,38 +1,37 @@
 ---
 name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+about: 찾은 버그를 알려주세요
+title: "[BUG]"
+labels: bug, enhancement
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**버그 설명**
+찾은 버그를 설명해주세요
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**버그 재현 과정**
+다른 사람도 확인할 수 있도록 버그를 일으키는 방법을 알려주세요
+1.  '...'로 이동
+2. '....'를 클릭
+3. '....'까지 스크롤 이동
+4. 에러 확인
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**기대했던 동작**
+원래 해당 동작을 했을 때 일어났었어야 할 동작을 설명해주세요
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+**스크린샷 첨부**
 
-**Desktop (please complete the following information):**
+**오류가 발생한 기기의 정보 입력**
  - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+ - 브라우저 [e.g. chrome, safari]
+ - 버전[e.g. 22]
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
+**오류가 발생한 기기가 스마트폰인 경우 입력**
+ - 기기: [e.g. iPhone6]
  - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+ - 브라우저 [e.g. stock browser, safari]
+ - 버전 [e.g. 22]
 
-**Additional context**
-Add any other context about the problem here.
+**추가**
+추가적으로 하고 싶은 말을 적어주세요
