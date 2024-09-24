@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: 추가 하고 싶은 기능에 대해서 적어주세요
-title: ''
+title: "[FEATURE] "
 labels: enhancement
 assignees: ''
 
