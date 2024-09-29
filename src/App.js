@@ -4,8 +4,8 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <div className="mainsearch"></div>
-      <div className="Autolayout"></div>
+      <div className="main-search"></div>
+      <div className="auto-layout"></div>
       <div className="search-btn">
         <img
           src="http://localhost:3000/searchicon.png"
