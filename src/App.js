@@ -3,22 +3,23 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          asdfasdfasdf
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="mainsearch"></div>;<div className="Autolayout"></div>
+      <div className="search-btn">
+        <img
+          src="http://localhost:3000/searchicon.png"
+          className="search-img"
+        ></img>
+      </div>
+      <div className="banner"></div>
+      <div className="board-tag">
+        <div className="board-list"></div>
+      </div>
+      <div className="user-info">
+        <div className="user-login"></div>
+        <div className="logout-btn"></div>
+      </div>
+      <div className="post-list"></div>
     </div>
   );
 }

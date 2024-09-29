@@ -36,3 +36,145 @@
     transform: rotate(360deg);
   }
 }
+
+.mainsearch {
+  position: absolute;
+  width: 730px;
+  height: 55px;
+  left: 480px;
+  top: 52px;
+  background: rgba(4, 74, 254, 0.3);
+  border-radius: 8px;
+}
+
+.Autolayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+
+  position: absolute;
+  width: 640.41px;
+  height: 20px;
+  left: 487.86px;
+  top: 59px;
+
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.search-btn {
+  position: absolute;
+  width: 40.22px;
+  height: 40px;
+  left: 1160.32px;
+  top: 59px;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.search-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  height: 8%;
+  left: 1px;
+  top: 164px;
+
+  background: rgba(4, 74, 254, 0.3);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.board-tag {
+  position: absolute;
+  width: 272px;
+  height: 410px;
+  left: 18px;
+  top: 40%;
+
+  background: #d2dfff;
+}
+
+.board-list {
+  position: absolute;
+  width: 238px;
+  height: 377px;
+  left: 17px;
+  top: 17px;
+
+  background: #ffffff;
+}
+
+.user-info {
+  position: absolute;
+  width: 223px;
+  height: 205px;
+  left: 82%;
+  top: 40%;
+  border-radius: 15px;
+
+  background: rgba(4, 74, 254, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-login {
+  /* Frame 2 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  margin-top: 0px;
+
+  width: 80%;
+  height: 50%;
+
+  background: rgba(4, 74, 254, 0.2);
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.logout-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  margin-top: 10px;
+
+  width: 80%;
+  height: 15%;
+
+  background: rgba(4, 74, 254, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.post-list {
+  /* 게시글 그룹 */
+
+  position: absolute;
+  width: 856px;
+  height: 630px;
+  left: 25%;
+  top: 40%;
+
+  background: rgba(210, 223, 255, 0.2);
+}
