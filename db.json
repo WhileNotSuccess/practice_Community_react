@@ -1,0 +1,179 @@
+{
+  "list": [
+    {
+      "id": "8jcg",
+      "content": "욕설, 비방 금지",
+      "author": "관리자",
+      "create_at": "20240101",
+      "title": "주의사항",
+      "category": "공지사항"
+    },
+    {
+      "id": "jd8g",
+      "content": "10월 19일 점검입니다",
+      "author": "관리자",
+      "create_at": "20240927",
+      "title": "점검공지",
+      "category": "공지사항"
+    },
+
+    {
+      "id": "b1dc",
+      "content": "오늘은 날이 좋네요/n뭐할까요",
+      "author": "아아아아",
+      "create_at": "20240925",
+      "title": "창밖을 봤더니",
+      "category": "자유게시판"
+    },
+    {
+      "id": "72su",
+      "content": "주 6일 근무 반대입니다",
+      "author": "바바바바",
+      "create_at": "20240824",
+      "title": "제 의견은요",
+      "category": "자유게시판"
+    },
+    {
+      "id": "i2ki",
+      "content": "내일 OO강가에서 축제가 있습니다",
+      "author": "사사사사",
+      "create_at": "20240627",
+      "title": "축제 광고",
+      "category": "축제게시판"
+    },
+    {
+      "id": "d6s9",
+      "content": "창렬남 가지마셈",
+      "author": "다다다다",
+      "create_at": "20240628",
+      "title": "OO강가 축제 후기",
+      "category": "축제게시판"
+    }
+  ],
+  "comment": [
+    {
+      "id": "1j23",
+      "content": "오후엔 비가 온대요",
+      "post_id": "b1dc",
+      "author": "아아아아"
+    },
+
+    {
+      "id": "9sdj",
+      "content": "모레엔 우박이 온대요",
+      "post_id": "b1dc",
+      "author": "바바바바"
+    },
+    {
+      "id": "52sd",
+      "content": "산책 나가시면 어때요?",
+      "post_id": "b1dc",
+      "author": "사사사사"
+    },
+    {
+      "id": "ie28",
+      "content": "찬성합니다",
+      "post_id": "72su",
+      "author": "바바바바"
+    },
+    {
+      "id": "d1i5",
+      "content": "주 4일이 적당한 것 같습니다",
+      "post_id": "72su",
+      "author": "아아아아"
+    },
+    {
+      "id": "d91j",
+      "content": "내일 가보고 후기 적음",
+      "post_id": "i2ki",
+      "author": "다다다다"
+    },
+    {
+      "id": "82sg",
+      "content": "강가에서 뭐함?",
+      "post_id": "i2ki",
+      "author": "바바바바"
+    },
+    {
+      "id": "8ske",
+      "content": "축제음식 개 비쌈",
+      "post_id": "d6s9",
+      "author": "다다다다"
+    },
+    {
+      "id": "9xu4",
+      "content": "그럴 줄 알았다",
+      "post_id": "d6s9",
+      "author": "아아아아"
+    }
+  ],
+
+  "re_comment": [
+    {
+      "id": "83sh",
+      "content": "비는 싫어요",
+      "target_id": "1j23",
+      "author": "다다다다"
+    },
+    {
+      "id": "86hy",
+      "content": "우박은 왠거래요",
+      "target_id": "9sdj",
+      "author": "사사사사"
+    },
+    {
+      "id": "i29j",
+      "content": "저는 반대인데요",
+      "target_id": "ie28",
+      "author": "사사사사"
+    },
+    {
+      "id": "h9ji",
+      "content": "주 2일은 어때요?",
+      "target_id": "d1i5",
+      "author": "사사사사"
+    },
+    {
+      "id": "isu2",
+      "content": "축제 음식 같은거 나온다는데",
+      "target_id": "82sg",
+      "author": "사사사사"
+    },
+    {
+      "id": "8xh2",
+      "content": "ㄹㅇ 한 그릇에 만 삼천은 아니지",
+      "target_id": "8ske",
+      "author": "아아아아"
+    }
+  ],
+
+  "user": [
+    {
+      "email": "aaaa@gmail.com",
+      "password": "aaaa",
+      "nick_name": "아아아아"
+    },
+    {
+      "email": "bbbb@gmail.com",
+      "password": "bbbb",
+      "nick_name": "바바바바"
+    },
+    {
+      "email": "cccc@gmail.com",
+      "password": "cccc",
+      "nick_name": "사사사사"
+    },
+    {
+      "email": "dddd@gmail.com",
+      "password": "dddd",
+      "nick_name": "다다다다"
+    }
+  ],
+  "admin": [
+    {
+      "email": "administrator",
+      "password": "administrator",
+      "nick_name": "관리자"
+    }
+  ]
+}
