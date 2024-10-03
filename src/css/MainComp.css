@@ -1,10 +1,10 @@
 .container {
   display: flex;
-  justify-content: space-between; /* 좌우로 요소를 배치 */
-  align-items: flex-start; /* 상단 정렬 */
-  position: relative; /* 자식 요소가 절대 위치를 필요로 할 때 대비해 설정 */
-  height: 100vh; /* 부모 컨테이너 높이를 설정 */
-  padding: 0 3%; /* 좌우 여백을 주어 레이아웃 균형 맞추기 */
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  height: 100vh;
+  padding: 0 3%;
 }
 
 .board-tag {
@@ -75,10 +75,16 @@
 
 .post-list {
   width: 52vw;
-  height: 60vh;
-  margin-top: 18%; /* 다른 요소와 동일한 상단 마진 */
+  margin-top: 18%;
   background: rgba(210, 223, 255, 0.2);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.line-change {
+  width: 100%; /* 전체 너비를 사용 */
+  min-height: 30px;
+  border: 1px solid black;
+  padding: 5px; /* 약간의 패딩 추가 */
+  box-sizing: border-box; /* 패딩과 경계선을 포함하여 크기 계산 */
 }
