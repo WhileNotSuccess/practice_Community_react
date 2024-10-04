@@ -1,3 +1,4 @@
+/* SearchResult.js */
 import React from "react";
 import "../css/SearchResult.css";
 const SearchResult = () => {
