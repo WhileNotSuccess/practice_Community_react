@@ -3,10 +3,11 @@ import "../css/MainComp.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import MainCompo from "../components/MainComp";
+import { MainCompo, PostCompo } from "../components/MainComp";
 
 const Main = () => {
   const [list, setList] = useState([]);
+  const [category, setCategory] = useState([]);
 
   useEffect(() => {
     axios.get("http://localhost:3001/list").then((res) => {
@@ -14,10 +15,20 @@ const Main = () => {
     });
   }, []);
 
+  useEffect(() => {
+    axios.get("http://localhost:3001/category").then((res) => {
+      setCategory(res.data);
+    });
+  });
+
   return (
     <div className="container">
       <div className="board-tag">
-        <div className="board-list"></div>
+        <div className="board-list">
+          {category.map((category) => (
+            <PostCompo category={category} />
+          ))}
+        </div>
       </div>
       <div className="post-list">
         {list.map((item) => (

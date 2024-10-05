@@ -82,9 +82,9 @@
 }
 
 .line-change {
-  width: 100%; /* 전체 너비를 사용 */
+  width: 100%;
   min-height: 30px;
   border: 1px solid black;
-  padding: 5px; /* 약간의 패딩 추가 */
-  box-sizing: border-box; /* 패딩과 경계선을 포함하여 크기 계산 */
+  padding: 5px;
+  box-sizing: border-box;
 }

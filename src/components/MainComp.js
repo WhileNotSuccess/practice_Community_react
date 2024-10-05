@@ -1,8 +1,7 @@
 import React from "react";
 import "../css/MainComp.css";
 
-const MainCompo = (props) => {
-  console.log(props.title);
+export const MainCompo = (props) => {
   return (
     <div className="line-change">
       <span>
@@ -13,4 +12,13 @@ const MainCompo = (props) => {
   );
 };
 
-export default MainCompo;
+export const PostCompo = (props) => {
+  return (
+    <div className="line-change">
+      <span>
+        {props.category}
+        <br />
+      </span>
+    </div>
+  );
+};
