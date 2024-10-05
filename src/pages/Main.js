@@ -8,6 +8,7 @@ import { MainCompo, PostCompo } from "../components/MainComp";
 const Main = () => {
   const [list, setList] = useState([]);
   const [category, setCategory] = useState([]);
+  const [date, setDate] = useState("");
 
   useEffect(() => {
     axios.get("http://localhost:3001/list").then((res) => {
@@ -21,6 +22,20 @@ const Main = () => {
     });
   }, []);
 
+  useEffect(() => {
+    const today = new Date();
+    setDate(
+      today
+        .toLocaleDateString("ko-kr", {
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit",
+        })
+        .replace(/\. /g, "/")
+        .replace(/\.$/, "")
+    );
+  }, []);
+
   return (
     <div className="container">
       <div className="board-tag">
@@ -32,7 +47,12 @@ const Main = () => {
       </div>
       <div className="post-list">
         {list.map((item) => (
-          <MainCompo key={item.id} title={item.title} />
+          <MainCompo
+            key={item.id}
+            title={item.title}
+            category={item.category}
+            date={date}
+          />
         ))}
       </div>
       <div className="user-info">

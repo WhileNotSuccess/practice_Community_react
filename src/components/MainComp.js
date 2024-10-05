@@ -5,7 +5,7 @@ export const MainCompo = (props) => {
   return (
     <div className="line-change">
       <span>
-        {props.title}
+        [{props.category}] {props.title} {props.date}
         <br />
       </span>
     </div>
