@@ -175,5 +175,19 @@
       "password": "administrator",
       "nick_name": "관리자"
     }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "board_name": "공지사항"
+    },
+    {
+      "id": "2",
+      "board_name": "자유게시판"
+    },
+    {
+      "id": "3",
+      "board_name": "축제게시판"
+    }
   ]
 }

@@ -16,7 +16,7 @@ export const PostCompo = (props) => {
   return (
     <div className="line-change">
       <span>
-        {props.category}
+        {props.category.board_name}
         <br />
       </span>
     </div>

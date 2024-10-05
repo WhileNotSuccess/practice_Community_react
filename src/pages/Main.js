@@ -19,14 +19,14 @@ const Main = () => {
     axios.get("http://localhost:3001/category").then((res) => {
       setCategory(res.data);
     });
-  });
+  }, []);
 
   return (
     <div className="container">
       <div className="board-tag">
         <div className="board-list">
           {category.map((category) => (
-            <PostCompo category={category} />
+            <PostCompo key={category.id} category={category} />
           ))}
         </div>
       </div>
