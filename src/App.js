@@ -9,7 +9,7 @@ import Main from "./pages/Main";
 import Post from "./pages/Post";
 import SignIn from "./pages/SignIn";
 import Nav from "./components/Nav";
-import SearchResult from "./components/SearchResult";
+import SearchResult from "./pages/SearchResult";
 const App = () => {
   return (
     <>

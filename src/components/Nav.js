@@ -4,14 +4,12 @@ import "../css/Nav.css";
 import { Link } from "react-router-dom";
 import searchIcon from "../img/search.jpg";
 const Nav = () => {
-  const [SearchInput, setSearchInput] = useState("");
+  const [searchInput, setSearchInput] = useState("");
 
   const onChange = (e) => {
     setSearchInput(e.target.value);
   };
-  const onSearch = () => {
-    console.log(SearchInput);
-  };
+  const onSearch = () => {}; /*  */
 
   return (
     <div className="parent">
@@ -23,16 +21,11 @@ const Nav = () => {
           <input
             className="search-box"
             placeholder="내용을 입력하세요."
-            value={SearchInput}
+            value={searchInput}
             onChange={onChange}
           />
-          <Link to="/search-result">
-            <button
-              className="search-icon"
-              onClick={() => {
-                onSearch();
-              }}
-            >
+          <Link to="/search-result" state={{ searchInput: searchInput }}>
+            <button className="search-icon">
               <img src={searchIcon} alt="" />
             </button>
           </Link>
