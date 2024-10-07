@@ -9,6 +9,8 @@ const Main = () => {
   const [list, setList] = useState([]);
   const [category, setCategory] = useState([]);
   const [date, setDate] = useState("");
+  const [page, setPages] = useState(10);
+  const [h_announce, sh_announce] = useState(true);
 
   useEffect(() => {
     axios.get("http://localhost:3001/list").then((res) => {
@@ -46,6 +48,31 @@ const Main = () => {
         </div>
       </div>
       <div className="post-list">
+        <div className="options-container">
+          <form
+            onClick={() => {
+              sh_announce(!h_announce);
+            }}
+          >
+            <input
+              type="checkbox"
+              checked={h_announce}
+              onChange={() => sh_announce(!h_announce)}
+            />
+            공지숨기기
+          </form>
+          <select
+            value={page}
+            onChange={(e) => setPages(e.target.value)}
+            className="page-select"
+          >
+            <option value={10}>10개씩</option>
+            <option value={20}>20개씩</option>
+            <option value={30}>30개씩</option>
+          </select>
+        </div>
+        <hr />
+
         {list.map((item) => (
           <MainCompo
             key={item.id}
