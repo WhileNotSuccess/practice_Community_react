@@ -1,11 +1,7 @@
 import React from "react";
-import "../../css/PostComp.css";
+import Post from "../pages/Post";
 const PostComp = () => {
-  return (
-    <div>
-      <PostComp />
-    </div>
-  );
+  return <div>안녕</div>;
 };
 
 export default PostComp;

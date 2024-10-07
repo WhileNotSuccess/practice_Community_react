@@ -1,3 +1,4 @@
+/* App.js */
 import "./App.css";
 import React from "react";
 import { Routes, Route } from "react-router-dom";
@@ -8,6 +9,7 @@ import Main from "./pages/Main";
 import Post from "./pages/Post";
 import SignIn from "./pages/SignIn";
 import Nav from "./components/Nav";
+import SearchResult from "./pages/SearchResult";
 
 const App = () => {
   return (
@@ -20,6 +22,7 @@ const App = () => {
         <Route path="/login" Component={Login} />
         <Route path="/post" Component={Post} />
         <Route path="/sign-in" Component={SignIn} />
+        <Route path="/search-result" Component={SearchResult} />
       </Routes>
     </>
   );

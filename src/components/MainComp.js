@@ -1,12 +1,24 @@
 import React from "react";
 import "../css/MainComp.css";
 
-const MainCompo = () => {
+export const MainCompo = (props) => {
   return (
-    <div>
-      <mainCompo />
+    <div className="line-change">
+      <span>
+        [{props.category}] {props.title} {props.date}
+        <br />
+      </span>
     </div>
   );
 };
 
-export default MainCompo;
+export const PostCompo = (props) => {
+  return (
+    <div className="line-change">
+      <span>
+        {props.category.board_name}
+        <br />
+      </span>
+    </div>
+  );
+};
