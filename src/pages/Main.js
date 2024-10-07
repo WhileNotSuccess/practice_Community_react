@@ -14,13 +14,20 @@ const Main = () => {
   const [date, setDate] = useState("");
   const [page, setPages] = useState(10);
   const [h_announce, sh_announce] = useState(true);
+  const [announce, setAnnounce] = useState([]);
   const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
-    axios.get("http://localhost:3001/list").then((res) => {
-      setList(res.data);
-    });
+    axios
+      .get("http://localhost:3001/list")
+      .then((res) => {
+        return res.data;
+      })
+      .then((rel) => {
+        setList(rel.filter((ral) => ral.category !== "공지사항"));
+        setAnnounce(rel.filter((ral) => ral.category === "공지사항"));
+      });
   }, []);
 
   useEffect(() => {
@@ -45,6 +52,10 @@ const Main = () => {
 
   const GoToLogin = () => {
     navigate("/login");
+  };
+
+  const GoToSignIn = () => {
+    navigate("/sign-in");
   };
 
   const ScrollTop = () => {
@@ -88,6 +99,16 @@ const Main = () => {
           </select>
         </div>
         <hr />
+        {h_announce === true
+          ? null
+          : announce.map((item) => (
+              <MainCompo
+                key={item.id}
+                title={item.title}
+                category={item.category}
+                date={date}
+              />
+            ))}
 
         {list.map((item) => (
           <MainCompo
@@ -102,7 +123,9 @@ const Main = () => {
         <div className="user-login">
           <div onClick={GoToLogin}>로그인</div>
         </div>
-        <div className="logout-btn"></div>
+        <div className="logout-btn">
+          <div onClick={GoToSignIn}>회원가입</div>
+        </div>
       </div>
       <div className="top-icon" onClick={ScrollTop}>
         <img src={topIcon}></img>

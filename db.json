@@ -16,7 +16,6 @@
       "title": "점검공지",
       "category": "공지사항"
     },
-
     {
       "id": "b1dc",
       "content": "오늘은 날이 좋네요/n뭐할까요",
@@ -57,7 +56,6 @@
       "post_id": "b1dc",
       "author": "아아아아"
     },
-
     {
       "id": "9sdj",
       "content": "모레엔 우박이 온대요",
@@ -107,7 +105,6 @@
       "author": "아아아아"
     }
   ],
-
   "re_comment": [
     {
       "id": "83sh",
@@ -146,34 +143,62 @@
       "author": "아아아아"
     }
   ],
-
   "user": [
     {
       "email": "aaaa@gmail.com",
       "password": "aaaa",
-      "nick_name": "아아아아"
+      "nick_name": "아아아아",
+      "id": "7709"
     },
     {
       "email": "bbbb@gmail.com",
       "password": "bbbb",
-      "nick_name": "바바바바"
+      "nick_name": "바바바바",
+      "id": "7303"
     },
     {
       "email": "cccc@gmail.com",
       "password": "cccc",
-      "nick_name": "사사사사"
+      "nick_name": "사사사사",
+      "id": "48d1"
     },
     {
       "email": "dddd@gmail.com",
       "password": "dddd",
-      "nick_name": "다다다다"
+      "nick_name": "다다다다",
+      "id": "876a"
+    },
+    {
+      "id": "9e9f",
+      "email": "aaa@naverc.om",
+      "password": "1234",
+      "nick_name": "aaa"
+    },
+    {
+      "id": "c469",
+      "email": "test@google.co.kr",
+      "password": "1234",
+      "nick_name": "test"
+    },
+    {
+      "id": "2941",
+      "email": "test1@naverc.om",
+      "password": "1234",
+      "nick_name": "test1"
+    },
+    {
+      "id": "4184",
+      "email": "test5@naver.com",
+      "password": "1234",
+      "nick_name": "test4"
     }
   ],
   "admin": [
     {
       "email": "administrator",
       "password": "administrator",
-      "nick_name": "관리자"
+      "nick_name": "관리자",
+      "id": "80d8"
     }
   ],
   "category": [
