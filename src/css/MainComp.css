@@ -99,3 +99,16 @@
   width: 80px;
   margin-left: 10px;
 }
+
+.top-icon {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  cursor: pointer;
+}
+.board-name {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

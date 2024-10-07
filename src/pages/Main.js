@@ -4,6 +4,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import { MainCompo, PostCompo } from "../components/MainComp";
+import { useNavigate, useLocation } from "react-router-dom";
+import PathName from "./PathName";
+import topIcon from "../img/topicon.png";
 
 const Main = () => {
   const [list, setList] = useState([]);
@@ -11,6 +14,8 @@ const Main = () => {
   const [date, setDate] = useState("");
   const [page, setPages] = useState(10);
   const [h_announce, sh_announce] = useState(true);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     axios.get("http://localhost:3001/list").then((res) => {
@@ -38,6 +43,14 @@ const Main = () => {
     );
   }, []);
 
+  const GoToLogin = () => {
+    navigate("/login");
+  };
+
+  const ScrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="container">
       <div className="board-tag">
@@ -48,6 +61,9 @@ const Main = () => {
         </div>
       </div>
       <div className="post-list">
+        <span className="board-name">
+          <PathName location={location.pathname} />
+        </span>
         <div className="options-container">
           <form
             onClick={() => {
@@ -81,10 +97,15 @@ const Main = () => {
             date={date}
           />
         ))}
-        <div className="user-info">
-          <div className="user-login"></div>
-          <div className="logout-btn"></div>
+      </div>
+      <div className="user-info">
+        <div className="user-login">
+          <div onClick={GoToLogin}>로그인</div>
         </div>
+        <div className="logout-btn"></div>
+      </div>
+      <div className="top-icon" onClick={ScrollTop}>
+        <img src={topIcon}></img>
       </div>
     </div>
   );
