@@ -81,6 +81,11 @@ const Main = () => {
             date={date}
           />
         ))}
+        <div className="user-info">
+          <div className="user-login"></div>
+          <div className="logout-btn"></div>
+        </div>
+      </div>
     </div>
   );
 };
