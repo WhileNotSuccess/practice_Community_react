@@ -191,6 +191,12 @@
       "email": "test5@naver.com",
       "password": "1234",
       "nick_name": "test4"
+    },
+    {
+      "id": "e4a0",
+      "email": "ss@naver.com",
+      "password": "1324",
+      "nick_name": "ssss"
     }
   ],
   "admin": [

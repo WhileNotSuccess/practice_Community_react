@@ -3,7 +3,7 @@ import "../css/MainComp.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import { MainCompo, PostCompo } from "../components/MainComp";
+import { MainCompo, PostCompo, UserInfo } from "../components/MainComp";
 import { useNavigate, useLocation } from "react-router-dom";
 import PathName from "./PathName";
 import topIcon from "../img/topicon.png";
@@ -58,6 +58,10 @@ const Main = () => {
     navigate("/sign-in");
   };
 
+  const GoToPost = () => {
+    navigate("/post");
+  };
+
   const ScrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -71,32 +75,42 @@ const Main = () => {
           ))}
         </div>
       </div>
+
       <div className="post-list">
-        <span className="board-name">
-          <PathName location={location.pathname} />
-        </span>
-        <div className="options-container">
-          <form
-            onClick={() => {
-              sh_announce(!h_announce);
-            }}
-          >
-            <input
-              type="checkbox"
-              checked={h_announce}
-              onChange={() => sh_announce(!h_announce)}
-            />
-            공지숨기기
-          </form>
-          <select
-            value={page}
-            onChange={(e) => setPages(e.target.value)}
-            className="page-select"
-          >
-            <option value={10}>10개씩</option>
-            <option value={20}>20개씩</option>
-            <option value={30}>30개씩</option>
-          </select>
+        <div className="go-post">
+          <div>
+            <h4 onClick={GoToPost} style={{ "font-size": "bold" }}>
+              글작성
+            </h4>
+          </div>
+        </div>
+        <div className="name-and-options">
+          <span className="board-name">
+            <PathName location={location.pathname} />
+          </span>
+          <div className="options-container">
+            <form
+              onClick={() => {
+                sh_announce(!h_announce);
+              }}
+            >
+              <input
+                type="checkbox"
+                checked={h_announce}
+                onChange={() => sh_announce(!h_announce)}
+              />
+              공지숨기기
+            </form>
+            <select
+              value={page}
+              onChange={(e) => setPages(e.target.value)}
+              className="page-select"
+            >
+              <option value={10}>10개씩</option>
+              <option value={20}>20개씩</option>
+              <option value={30}>30개씩</option>
+            </select>
+          </div>
         </div>
         <hr />
         {h_announce === true
@@ -119,14 +133,7 @@ const Main = () => {
           />
         ))}
       </div>
-      <div className="user-info">
-        <div className="user-login">
-          <div onClick={GoToLogin}>로그인</div>
-        </div>
-        <div className="logout-btn">
-          <div onClick={GoToSignIn}>회원가입</div>
-        </div>
-      </div>
+      <UserInfo GoToLogin={GoToLogin} GoToSignIn={GoToSignIn} />
       <div className="top-icon" onClick={ScrollTop}>
         <img src={topIcon}></img>
       </div>
